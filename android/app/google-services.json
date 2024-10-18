@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037394981387",
+    "project_id": "mechspace-78398",
+    "storage_bucket": "mechspace-78398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037394981387:android:b2b0a9286fd0bc43d6cd0e",
+        "android_client_info": {
+          "package_name": "com.example.mechspace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3CVaTatAz8jMPMrbsPbISbZz4I6zEsRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

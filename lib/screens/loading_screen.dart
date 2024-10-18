@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
 
-class LoadingScreen extends StatelessWidget {
+class LoadingScreen extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
+  _LoadingScreenState createState() => _LoadingScreenState();
+}
+
+class _LoadingScreenState extends State<LoadingScreen> {
+  @override
+  void initState() {
+    super.initState();
     // Navigate to login screen after 2 seconds
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacement(
@@ -11,7 +17,10 @@ class LoadingScreen extends StatelessWidget {
         MaterialPageRoute(builder: (context) => LoginScreen()),
       );
     });
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlue,
       body: Center(
@@ -20,7 +29,7 @@ class LoadingScreen extends StatelessWidget {
           children: [
             // Logo or App Name
             Text(
-              'MechSwift',
+              'MechSpace',
               style: TextStyle(
                 fontSize: 40,
                 color: Colors.white,
