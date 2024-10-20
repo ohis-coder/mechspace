@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart'; 
 import 'package:cloud_firestore/cloud_firestore.dart'; 
 import 'login_screen.dart'; // Import the login screen
+import 'dart:io';
 
 class DashboardScreen extends StatefulWidget { 
   final String name; 
@@ -41,8 +42,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [ 
             CircleAvatar( 
               radius: 50, 
-              backgroundImage: widget.imageUrl.isNotEmpty 
-                  ? NetworkImage(widget.imageUrl) 
+              backgroundImage: File(widget.imageUrl).existsSync()
+                  ? FileImage(File(widget.imageUrl)) 
                   : AssetImage('assets/default_avatar.png') as ImageProvider, 
             ), 
             SizedBox(height: 20), 

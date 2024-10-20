@@ -30,6 +30,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+/android/app/google-services.json
+GoogleService-Info.plist
 
 # Symbolication related
 app.*.symbols
